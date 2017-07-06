@@ -2,11 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+ 
 <title>List My Orders</title>
 <style>
 .h2{
@@ -16,26 +12,17 @@ font-type:bold;
 </style>
 </head>
 <body>
-<div class="container">
 
-  <h2>welcome to citbookapp</h2>
-   <button><a href="../auth/logout" class="btn btn-info" role="button">logout</a></button> 
+
+  <h2>welcome to bookApp</h2>
+   <button><a href="../auth/logout" role="button">logout</a></button> 
              
-  <table class="table table-bordered">
+  <table border="1">
 	
-	<div class="content">
-		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-						
-						</div>
+	
 							<h2>MY ORDER</h2>
-						<div class="panel-body">
-							<table id="ordersTbl" border="1"
-								class="table table-striped table-bordered">
+						
+							<table " border="1">
 								<thead>
 									<tr>
 										<th width="10%">Order Id</th>
@@ -62,7 +49,7 @@ font-type:bold;
 											<c:if test="${order.status == 'ORDERED'}">
 												<td><a
 													href="../orders/updateStatus?id=${order.id}&status=CANCELLED"
-													class="btn btn-danger btn-sm">Cancel Order </a></td>
+													>Cancel Order </a></td>
 											</c:if>
 
 										</tr>
@@ -71,7 +58,7 @@ font-type:bold;
 
 									</c:forEach>
 									<tr>
-										<td><a href="../auth/list" class="btn btn-primary">Continue Shopping</a></td>
+										<td><a href="../auth/list" >Continue Shopping</a></td>
 									</tr>
 									
 								</tbody>
@@ -85,10 +72,6 @@ font-type:bold;
 			</div>
 		</div>
 	</div>
-	<script>
-		$(document).ready(function() {
-			$("#ordersTbl").DataTable();
-		});
-	</script>
+	
 </body>
 </html>

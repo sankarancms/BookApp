@@ -36,8 +36,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 			<div class="header-left">		
 					<ul>
-						<li ><a class="lock"  href="login.html"  >Login</a></li>
-						<li><a class="lock" href="register.html"  >Register</a></li>
+						<li ><a class="lock"  href="../auth/logout"  >Logout</a></li>
+						<li><a class="lock" href="#"  >Cart</a></li>
 						<li>
 </li>
 
@@ -55,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 		  <div class=" h_menu4">
 					<ul class="memenu skyblue">
-					  <li class="active grid"><a class="color8" href="index.html">Home</a></li>	
+					  <li class="active grid"><a class="color8" href="../auth">Home</a></li>	
 				      <li><a class="color1" href="#">Shop</a>
 				      	<div class="mepanel">
 						<div class="row">
@@ -100,8 +100,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  </div>
 						</div>
 			    </li>
-				<li><a class="color4" href="blog.html">Books</a></li>				
-				<li><a class="color6" href="contact.html">Contact us</a></li>
+				<li><a class="color4" href="#">Books</a></li>				
+				<li><a class="color6" href="#l">Contact us</a></li>
 			  </ul> 
 			</div>
 				
