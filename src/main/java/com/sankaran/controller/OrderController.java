@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.sankaran.service.OrderService;
-import com.sankaran.user.Order;
-import com.sankaran.user.User;
+import com.sankaran.model.Order;
+import com.sankaran.model.User;
 
 
 

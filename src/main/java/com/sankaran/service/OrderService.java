@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.sankaran.repository.OrderItemRepository;
 import com.sankaran.repository.OrderRepository;
-import com.sankaran.user.Order;
+import com.sankaran.model.Order;
 
 
 

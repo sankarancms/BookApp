@@ -1,4 +1,4 @@
-package com.sankaran.user;
+package com.sankaran.model;
 
 
 

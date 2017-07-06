@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.sankaran.service.BookService;
 import com.sankaran.service.UserService;
-import com.sankaran.user.Book;
-import com.sankaran.user.User;
+import com.sankaran.model.Book;
+import com.sankaran.model.User;
 
 
 
 
 @Controller
-@RequestMapping("bookuser")
+@RequestMapping("auth")
 
 public class UserController {
 
@@ -34,7 +34,7 @@ public class UserController {
 @GetMapping
 public String home(){
 	
-	return "login";
+	return "home";
 			}
 
 		
@@ -44,8 +44,12 @@ public String home(){
 		System.out.println("inside the controller");
 		List<Book> book = bookservice.findAll();
 		modelMap.addAttribute("books", book);
-		return "hello";
+		return "book/booklist";
 
+	}
+	@GetMapping("/login")
+	public String login(){
+		return "login";
 	}
 	@PostMapping("/login")
 public String insert(@RequestParam("username")String username,@RequestParam("password")String password,HttpSession session,ModelMap modelmap)
@@ -56,11 +60,11 @@ public String insert(@RequestParam("username")String username,@RequestParam("pas
 	System.out.println(user);
 	if(user != null){
 		session.setAttribute("loggedinuser", user);
-		return("redirect:../bookuser/list");
+		return("redirect:../auth/list");
 	}else
 		
 	{
-		return("login");
+		return("home");
 	}
 }
 	
@@ -76,9 +80,13 @@ public String insert(@RequestParam("username")String username,@RequestParam("pas
 		System.out.println("adduser");
 		User user= new User( name,username,password,mobileno,emailid,"A"); 
 			userservice.save(user);	
-		return"login";
+		return"redirect:../auth/registered";
 	
 }
+	@GetMapping("/registered")
+	public String registered(){
+		return "register/registered";
+	}
 	@GetMapping("/{id}")
 	public String Show(@PathVariable("id") int id,HttpSession session)
 	{
@@ -92,7 +100,7 @@ public String insert(@RequestParam("username")String username,@RequestParam("pas
 		public String logout(HttpSession session)
 		{
 			session.invalidate();
-			return"login";
+			return"home";
 		}
 	}
 

@@ -14,7 +14,7 @@
 
 <div class="container">
 
-  <h2>welcome to citbookapp</h2>
+  <h2>welcome to BookApp</h2>
    <button><a href="logout" class="btn btn-info" role="button">logout</a></button> 
   <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
   <table class="table table-bordered">

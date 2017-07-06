@@ -19,7 +19,7 @@ font-type:bold;
 <div class="container">
 
   <h2>welcome to citbookapp</h2>
-   <button><a href="../bookuser/logout" class="btn btn-info" role="button">logout</a></button> 
+   <button><a href="../auth/logout" class="btn btn-info" role="button">logout</a></button> 
              
   <table class="table table-bordered">
 	
@@ -71,7 +71,7 @@ font-type:bold;
 
 									</c:forEach>
 									<tr>
-										<td><a href="../bookuser/list" class="btn btn-primary">Continue Shopping</a></td>
+										<td><a href="../auth/list" class="btn btn-primary">Continue Shopping</a></td>
 									</tr>
 									
 								</tbody>

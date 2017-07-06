@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.sankaran.repository.BookRepository;
 import com.sankaran.repository.OrderItemRepository;
-import com.sankaran.user.OrderItem;
+import com.sankaran.model.OrderItem;
 
 @Service
 public class OrderItemService {

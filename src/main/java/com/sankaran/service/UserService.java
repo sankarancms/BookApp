@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sankaran.repository.UserRepository;
-import com.sankaran.user.User;
+import com.sankaran.model.User;
 
 
 @Service

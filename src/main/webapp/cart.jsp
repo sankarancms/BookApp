@@ -20,8 +20,8 @@
 
 <div class="container">
 
-  <h2>welcome to citbookapp</h2>
-   <button><a href="../bookuser/logout" class="btn btn-info" role="button">logout</a></button> 
+  <h2>welcome to BookAppp</h2>
+   <button><a href="../auth" class="btn btn-info" role="button">logout</a></button> 
              
   <table class="table table-bordered">
 	
@@ -67,7 +67,7 @@
 
 
 						<br />
-						<a href="../bookuser/list" class="btn btn-info">Continue Shopping</a>
+						<a href="../auth/list" class="btn btn-info">Continue Shopping</a>
 
 
 					</c:if>
