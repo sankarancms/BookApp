@@ -220,7 +220,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 					<p>
 Contrary to popular belief</p>
-					<p>The standard chunk</p>
+					<p>The standard chunk </p>
 					<p>office:  +12 34 995 0792</p>
 					<ul class="social">
 						<li><a href="#"><i> </i></a></li>						
